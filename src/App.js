@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import './App.css';
 
+/*
+  Importing the RecipePage component from the './RecipePage.js' file.
+  import RecipePage from './RecipePage.js';
+*/
+
 function App() {
   const [ingredients, setIngredients] = useState([]);  // Store selected ingredients
   const [ingredientInput, setIngredientInput] = useState("");  // Temporary input value
@@ -126,7 +131,7 @@ function App() {
   return (
     <div className="App">
       <div className="slogan-container">
-        <h5 data-text="Your Personal Chef, Powered by AI">Your Personal Chef, Powered by AI</h5>
+        <h5 data-text="Your Personal Chef, Powered by AI  •"> • Your Personal Chef, Powered by AI •</h5>
       </div>
 
       <div className="header-container">
@@ -219,9 +224,7 @@ function App() {
         )}
       </div>
 
-      <div className="footer">
-        <p>© 2024 <a href="https://catesilva.com">SmartBite</a>. All rights reserved</p>
-      </div>
+     
     </div>
   );
 }

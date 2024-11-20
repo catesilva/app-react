@@ -136,7 +136,7 @@ p {
 
 .form-container input {
   border: 1px solid #ccc;
-  border-radius: 8px 0 0 8px;
+  border-radius: 28px 0 0 28px;
   width: 100%;
   max-width: 525px;
   height: 40px;
@@ -145,15 +145,16 @@ p {
 .form-container button {
   background-color: #222;
   color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #222;
   cursor: pointer;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 28px 28px 0;
   height: 40px;
   width: 280px;
   font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight:600;
 }
 
 .form-container input:focus {
@@ -168,9 +169,10 @@ p {
 
 .form-container button:disabled {
   background-color: #eee;
-  color: #6b6b6b;
+  color: #5d5d5d;
   cursor: not-allowed;
   border: 1px solid #ccc;
+  font-weight:300;
 }
 
 .form-container button:disabled:hover {
@@ -309,7 +311,7 @@ button.cta {
 
 button.cta:hover {
   background-color:transparent;
-  color: #777;  /* Change text color on hover */
+  color: #bd5814;;  /* Change text color on hover */
   cursor:pointer;
 }
 
@@ -362,11 +364,11 @@ button:disabled:hover {
 }
 
 .stars .filled {
-  color: #FFE896;  /* Filled stars color */
+  color: #f7b500;  /* Filled stars color */
 }
 
 .stars .empty {
-  color:#cdcdcd;  /* Outlined stars color */
+  color:#c49000;  /* Outlined stars color */
 }
 
 .slogan-container {
@@ -392,7 +394,7 @@ button:disabled:hover {
 /* Duplicating the text to make it scroll seamlessly */
 .slogan-container h5:after {
   content: attr(data-text); /* Duplicate the text */
-  padding-left: 10px; /* Add space between the original and duplicate text */
+  padding-left: 5px; /* Add space between the original and duplicate text */
 }
 
 /* Keyframes to scroll the text horizontally */
@@ -431,31 +433,7 @@ button:hover {
   background-color:none !important;
 }
 
-/* Footer */
 
-.footer {
-  padding: 20px;
-  color: #222;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  border-top: 1px solid #ddd;
-  z-index: -10;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between; /* Align text and Instagram link on opposite sides */
-  align-items: center;
-}
-
-.footer p {
-  margin: 0;
-}
-
-.footer a, .footer a:hover {
-  color: #222;
-}
 
 .recipe-card h3 {
   display: -webkit-box;  /* Creates a flexible box for text */
